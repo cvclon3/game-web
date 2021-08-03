@@ -1,3 +1,3 @@
 # game-web
-More/Less game
+## More/Less game
 https://cvclon3.github.io/game-web/
