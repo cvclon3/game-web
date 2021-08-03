@@ -14,7 +14,7 @@ function definition (input, randomNumber) {
         let result = "You win";
         document.getElementById('result').innerHTML = result;
     } else if (input < randomNumber) {
-        document.getElementById('result').innerHTML = "more";
+        document.getElementById('result').innerHTML = randomNumber;
         definition(listen(), randomNumber);
     } else {
         document.getElementById('result').innerHTML = "less";
