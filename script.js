@@ -1,18 +1,15 @@
 function getRandomNumber () {
-    let randomNumber = Math.round(Math.random() * (1000 - 1) + 1);
-    return randomNumber;
+    return Math.round(Math.random() * (1000 - 1) + 1);
 }
 
 function listen() {
-    let input = document.getElementById('input').value;
-    return input;
+    return document.getElementById('input').value;
 }
 
 function definition (input, randomNumber) {
     document.getElementById('res').innerHTML = randomNumber;
     if (input == randomNumber) {
-        let result = "You win";
-        document.getElementById('result').innerHTML = result;
+        document.getElementById('result').innerHTML = "You win";
     } else if (input < randomNumber) {
         document.getElementById('result').innerHTML = "more";
         definition(listen(), randomNumber);
@@ -22,10 +19,8 @@ function definition (input, randomNumber) {
     }
 }
 
-function main() {
-    document.getElementById('check').addEventListener('click', main);
-    /*const randomNumber = getRandomNumber();*/
-    definition(listen(), getRandomNumber());
+document.getElementById('check').addEventListener('click', check);
+const randomNumber = getRandomNumber();
+function check() {
+    definition(listen(), randomNumber);
 }
-
-main()
