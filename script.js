@@ -7,7 +7,6 @@ function listen() {
 }
 
 function definition (input, randomNumber) {
-    document.getElementById('res').innerHTML = randomNumber;
     if (input === randomNumber) {
         document.getElementById('result').innerHTML = "You win";
     } else if (input < randomNumber) {
