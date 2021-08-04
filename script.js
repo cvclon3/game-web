@@ -1,5 +1,5 @@
 function getRandomNumber () {
-    let randomNumber = Math.random() * (1000 - 1) + 1;
+    let randomNumber = Math.round(Math.random() * (1000 - 1) + 1);
     return randomNumber;
 }
 
@@ -25,7 +25,7 @@ function definition (input, randomNumber) {
 function main() {
     document.getElementById('check').addEventListener('click', main);
     /*const randomNumber = getRandomNumber();*/
-    definition(listen(), getRandomNumber);
+    definition(listen(), getRandomNumber());
 }
 
 main()
