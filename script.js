@@ -3,12 +3,12 @@ function getRandomNumber () {
 }
 
 function listen() {
-    return document.getElementById('input').value;
+    return parseInt(document.getElementById('input').value, 10);
 }
 
 function definition (input, randomNumber) {
     document.getElementById('res').innerHTML = randomNumber;
-    if (input == randomNumber) {
+    if (input === randomNumber) {
         document.getElementById('result').innerHTML = "You win";
     } else if (input < randomNumber) {
         document.getElementById('result').innerHTML = "more";
