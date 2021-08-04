@@ -29,3 +29,5 @@ function main() {
     const randomNumber = getRandomNumber();
     definition(listen(), randomNumber);
 }
+
+main()
